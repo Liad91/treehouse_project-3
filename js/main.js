@@ -61,7 +61,6 @@ function getUserTitle() {
     
     function titleOptionClickEvent() {
         var titleInput = document.getElementById('other-title');
-        var title = document.getElementById('title');
 
         if (this.getAttribute('value') === 'other') {
             if (!titleInput) {
@@ -81,7 +80,6 @@ function getUserTitle() {
     // Sanitize the color options text.
     // Only display the options that match the design selected in the "Design" menu.
 function getTshirtDesign() {
-    var size = document.getElementById('size');
     var design = document.getElementById('design');
     var designOptions = design.nextSibling.querySelectorAll('a');
     var color = document.getElementById('color');
